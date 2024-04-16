@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stock Market Screener</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+  <header>Stock Market Screener</header>
+  <div id="main">
+    <article><div class="row">
+      <div class="column">
+        <table>
+          <tr>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>{{ date }}</td>
+          </tr>
+          <tr>
+            <th>Previous Close</th>
+          </tr>
+          <tr>
+            <td>{{ previous_close }}</td>
+          </tr>
+          <tr>
+            <th>Day Low</th>
+        </tr>
+        <tr>
+          <td>{{ low }}</td>
+        </tr>
+        <tr>
+          <th>Day High</th>
+        </tr>
+        <tr>
+          <td>{{ high }}</td>
+        </tr>
+        </table>
+        
+        </body>
+        </html>
+      </div>
+      <div class="column"></div>
+    </div>
+    </article>
+    <nav></nav>
+    <aside></aside>
+  </div>
+  <footer>Stock Market Screener©</footer>
+</body>
